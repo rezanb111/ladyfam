@@ -1,8 +1,11 @@
-export default {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // تیک‌های آزمایشی که کد شاپ‌فای لازم داره:
   experimental: {
-    ppr: true,
-    inlineCss: true,
+    dynamicIO: true,
+    cacheComponents: true,
     useCache: true,
+    inlineCss: true,
   },
   images: {
     formats: ["image/avif", "image/webp"],
@@ -15,3 +18,5 @@ export default {
     ],
   },
 };
+
+export default nextConfig;
